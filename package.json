@@ -1,0 +1,19 @@
+{
+  "name": "@kefler/conversor-multiple",
+  "version": "1.0.0",
+  "description": "Un simple conversor que devuelve un arreglo con el resultado y una cadena de texto",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-afk/Conversor.js.git"
+  },
+  "author": "kefler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-afk/Conversor.js/issues"
+  },
+  "homepage": "https://github.com/web-afk/Conversor.js#readme"
+}

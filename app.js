@@ -24,8 +24,6 @@ const Conversor = {
             resultado += `${numero}${aMedida}${resto}`;
         }
         let arr = [numero,resultado];
-        this.mos(resultado);
-        this.mos(numero);
         return arr;
     },
 
@@ -38,54 +36,6 @@ const Conversor = {
             resultado = 10**valor;
         }
         return resultado;
-    },
-
-    Basico : {
-        Suma : {
-            sumasNor(){
-                let argumentos = [].slice.call(arguments);
-                let result = argumentos.reduce((a,b)=> a+b ,0);
-                let all = Conversor.comp(result,'');
-                return all;
-            },
-            sumasInv(a,b){
-                let resultado;
-                if(a!==undefined && !b){
-                    resultado = (a*(a+1))/2;
-                    
-                }
-                else if(a!==undefined && b!==undefined){
-                    resultado =  ((b*(b+1))/2) - ((a*(a+1))/2);
-                }
-                let all = Conversor.comp(resultado,'');
-                return all;
-            },
-        },
-    },
-
-    JavaScript :{
-        Ordenar(arr,how){
-            let num1;
-            let num2;
-            if(how === 'az' || how === undefined){
-                num1 = -1;
-                num2 = 1;
-            }
-            else if(how === 'za'){
-                num1 = 1;
-                num2 = -1;
-            }
-            else console.log('Verifique los valores');
-            
-
-            let newArr = arr.sort((a,b)=>{
-                if(b > a) return num1;
-                else if(a > b) return num2;
-                return 0;
-            });
-
-            return newArr;
-        },
     },
 
     MedidasdeLongitud : {
@@ -179,8 +129,10 @@ const Conversor = {
 
             return resultadoGeneral;
         }
-
     },
+}
+
+const rest = {
     Matematicas : {
         factorial(a){
             let resultado = 1;
@@ -191,14 +143,53 @@ const Conversor = {
             return arr;
         }
     },
+    Basico : {
+        Suma : {
+            sumasNor(){
+                let argumentos = [].slice.call(arguments);
+                let result = argumentos.reduce((a,b)=> a+b ,0);
+                let all = Conversor.comp(result,'');
+                return all;
+            },
+            sumasInv(a,b){
+                let resultado;
+                if(a!==undefined && !b){
+                    resultado = (a*(a+1))/2;
+                    
+                }
+                else if(a!==undefined && b!==undefined){
+                    resultado =  ((b*(b+1))/2) - ((a*(a+1))/2);
+                }
+                let all = Conversor.comp(resultado,'');
+                return all;
+            },
+        },
+    },
+
+    JavaScript :{
+        Ordenar(arr,how){
+            let num1;
+            let num2;
+            if(how === 'az' || how === undefined){
+                num1 = -1;
+                num2 = 1;
+            }
+            else if(how === 'za'){
+                num1 = 1;
+                num2 = -1;
+            }
+            else console.log('Verifique los valores');
+            
+
+            let newArr = arr.sort((a,b)=>{
+                if(b > a) return num1;
+                else if(a > b) return num2;
+                return 0;
+            });
+
+            return newArr;
+        },
+    },
 }
 
-let suma = Conversor.Basico.Suma.sumasInv;
-console.log(suma(3,5));
-
-let orden = Conversor.JavaScript.Ordenar([5,80,50,40,100,3,-2,58],'za');
-console.log(orden);
-
-let mate = Conversor.Matematicas.factorial(5);
-console.log(mate);
-
+module.exports = Conversor;
