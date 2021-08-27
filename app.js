@@ -110,26 +110,7 @@ const Conversor = {
 
             return resultadoGeneral;
         }
-    },
-
-    medidasDeTiempo : {
-
-        segundo(Medida, aMedida){
-            let numero = (aMedida === 'segundo' ? Medida : aMedida === 'minuto' ? Medida/60 : aMedida === 'hora' ? Medida/(60*60) : aMedida === 'dia' ? Medida/(60*60*24) : aMedida === 'semana' ? Medida/(60*60*24*7) : aMedida === 'quincena' ? Medida/(60*60*24*15) : aMedida === 'mes' ? Medida/(60*60*24*7*4) : aMedida === 'trimestre' ? Medida/(60*60*24*7*4*3) : aMedida === 'semestre' ? Medida/(60*60*24*7*4*6) : aMedida === 'año' ? Medida/(60*60*24*365) : aMedida === 'bienio' ? Medida/(60*60*24*365*2) : aMedida === 'trieñio' ? Medida/(60*60*24*365*3) : aMedida === 'lustro' ? Medida/(60*60*24*365*5) : aMedida === 'decada' ? Medida/(60*60*24*365*10) : aMedida === 'siglo' ? Medida/(60*60*24*365*100) : aMedida === 'milenio' ? Medida/(60*60*24*365*1000) : 'Digite bien los valores');
-
-            let resultadoGeneral = Conversor.comp( numero , aMedida, 'tiempo');
-
-            return resultadoGeneral;
-        },
-
-        minuto(Medida, aMedida){
-            let numero = (aMedida === 'segundo' ? Medida*60 : aMedida === 'minuto' ? Medida : aMedida === 'hora' ? Medida/(60) : aMedida === 'dia' ? Medida/(60*24) : aMedida === 'semana' ? Medida/(60*24*7) : aMedida === 'quincena' ? Medida/(60*24*15) : aMedida === 'mes' ? Medida/(60*24*7*4) : aMedida === 'trimestre' ? Medida/(60*24*7*4*3) : aMedida === 'semestre' ? Medida/(60*24*7*4*6) : aMedida === 'año' ? Medida/(60*24*365) : aMedida === 'bienio' ? Medida/(60*24*365*2) : aMedida === 'trieñio' ? Medida/(60*24*365*3) : aMedida === 'lustro' ? Medida/(60*24*365*5) : aMedida === 'decada' ? Medida/(60*24*365*10) : aMedida === 'siglo' ? Medida/(60*24*365*100) : aMedida === 'milenio' ? Medida/(60*24*365*1000) : 'Digite bien los valores');
-
-            let resultadoGeneral = Conversor.comp( numero , aMedida, 'tiempo');
-
-            return resultadoGeneral;
-        }
-    },
+    }
 }
 
 const rest = {
@@ -189,6 +170,24 @@ const rest = {
 
             return newArr;
         },
+    },
+    medidasDeTiempo : {
+
+        segundo(Medida, aMedida){
+            let numero = (aMedida === 'segundo' ? Medida : aMedida === 'minuto' ? Medida/60 : aMedida === 'hora' ? Medida/(60*60) : aMedida === 'dia' ? Medida/(60*60*24) : aMedida === 'semana' ? Medida/(60*60*24*7) : aMedida === 'quincena' ? Medida/(60*60*24*15) : aMedida === 'mes' ? Medida/(60*60*24*7*4) : aMedida === 'trimestre' ? Medida/(60*60*24*7*4*3) : aMedida === 'semestre' ? Medida/(60*60*24*7*4*6) : aMedida === 'año' ? Medida/(60*60*24*365) : aMedida === 'bienio' ? Medida/(60*60*24*365*2) : aMedida === 'trieñio' ? Medida/(60*60*24*365*3) : aMedida === 'lustro' ? Medida/(60*60*24*365*5) : aMedida === 'decada' ? Medida/(60*60*24*365*10) : aMedida === 'siglo' ? Medida/(60*60*24*365*100) : aMedida === 'milenio' ? Medida/(60*60*24*365*1000) : 'Digite bien los valores');
+
+            let resultadoGeneral = Conversor.comp( numero , aMedida, 'tiempo');
+
+            return resultadoGeneral;
+        },
+
+        minuto(Medida, aMedida){
+            let numero = (aMedida === 'segundo' ? Medida*60 : aMedida === 'minuto' ? Medida : aMedida === 'hora' ? Medida/(60) : aMedida === 'dia' ? Medida/(60*24) : aMedida === 'semana' ? Medida/(60*24*7) : aMedida === 'quincena' ? Medida/(60*24*15) : aMedida === 'mes' ? Medida/(60*24*7*4) : aMedida === 'trimestre' ? Medida/(60*24*7*4*3) : aMedida === 'semestre' ? Medida/(60*24*7*4*6) : aMedida === 'año' ? Medida/(60*24*365) : aMedida === 'bienio' ? Medida/(60*24*365*2) : aMedida === 'trieñio' ? Medida/(60*24*365*3) : aMedida === 'lustro' ? Medida/(60*24*365*5) : aMedida === 'decada' ? Medida/(60*24*365*10) : aMedida === 'siglo' ? Medida/(60*24*365*100) : aMedida === 'milenio' ? Medida/(60*24*365*1000) : 'Digite bien los valores');
+
+            let resultadoGeneral = Conversor.comp( numero , aMedida, 'tiempo');
+
+            return resultadoGeneral;
+        }
     },
 }
 
