@@ -1,6 +1,6 @@
 {
   "name": "conversor-multiple",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "Un simple conversor que devuelve un arreglo con el resultado y una cadena de texto",
   "main": "app.js",
   "scripts": {
@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/web-afk/Conversor.js/issues"
   },
-  "homepage": "https://github.com/web-afk/Conversor.js#readme"
+  "homepage": "https://github.com/web-afk/Conversor.js#readme",
+  "keywords": ["math"]
 }

@@ -1,5 +1,13 @@
 # Conversor.js
 
+## Instalar
+
+para instalar con npm se debe:
+
+```
+$ npm i conversor-multiple
+```
+
 ## Inicializar
 
 Para inicializar el conversor se da la siguiente instrucción, la variable puede tener cualquier nombre :
