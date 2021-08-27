@@ -16,5 +16,10 @@
     "url": "https://github.com/web-afk/Conversor.js/issues"
   },
   "homepage": "https://github.com/web-afk/Conversor.js#readme",
-  "keywords": ["math"]
+  "keywords": [
+    "math"
+  ],
+  "dependencies": {
+    "conversor-multiple": "^1.2.5"
+  }
 }

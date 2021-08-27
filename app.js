@@ -74,7 +74,7 @@ const Conversor = {
 
             let multip = Conversor.verificar(multi);
 
-            let numero = (aMedida==='mm'? Medida*multip*100 : aMedida==='cm'? Medida*multip*10 : aMedida === 'dm'? Medida : aMedida*multip === 'm' ? Medida : aMedida === 'dam'? Medida/multip : aMedida === 'hm' ? Medida/(multip*10) : aMedida === 'km' ? Medida/(multip*100) : `Digite Bien los valores`);
+            let numero = (aMedida==='mm'? Medida*multip*100 : aMedida==='cm'? Medida*multip*10 : aMedida === 'dm'? Medida*multip : aMedida === 'm' ? Medida : aMedida === 'dam'? Medida/(multip) : aMedida === 'hm' ? Medida/(multip*10) : aMedida === 'km' ? Medida/(multip*100) : `Digite Bien los valores`);
 
             let resultadoGeneral = Conversor.comp( numero , aMedida , multi);
 
@@ -84,7 +84,7 @@ const Conversor = {
 
             let multip = Conversor.verificar(multi);
 
-            let numero = (aMedida==='mm'? Medida*multip*1000 : aMedida==='cm'? Medida*multip*100 : aMedida === 'dm'? Medida : aMedida*multip*10 === 'm' ? Medida*multip : aMedida === 'dam'? Medida : aMedida === 'hm' ? Medida/multip : aMedida === 'km' ? Medida/multip*10 : `Digite Bien los valores`);
+            let numero = (aMedida==='mm'? Medida*multip*1000 : aMedida==='cm'? Medida*multip*100 : aMedida === 'dm'? Medida*multip*10 : aMedida === 'm' ? Medida*multip : aMedida === 'dam'? Medida : aMedida === 'hm' ? Medida/(multip) : aMedida === 'km' ? Medida/(multip*10) : `Digite Bien los valores`);
 
             let resultadoGeneral = Conversor.comp( numero , aMedida , multi);
 
@@ -94,7 +94,7 @@ const Conversor = {
 
             let multip = Conversor.verificar(multi);
 
-            let numero = (aMedida==='mm'? Medida*multip*10000 : aMedida==='cm'? Medida*multip*1000 : aMedida === 'dm'? Medida : aMedida*multip*100 === 'm' ? Medida*multip*10 : aMedida === 'dam'? Medida*multip : aMedida === 'hm' ? Medida : aMedida === 'km' ? Medida/multip : `Digite Bien los valores`);
+            let numero = (aMedida==='mm'? Medida*multip*10000 : aMedida==='cm'? Medida*multip*1000 : aMedida === 'dm'? Medida*multip*100 : aMedida === 'm' ? Medida*multip*10 : aMedida === 'dam'? Medida*multip : aMedida === 'hm' ? Medida : aMedida === 'km' ? Medida/multip : `Digite Bien los valores`);
 
             let resultadoGeneral = Conversor.comp( numero , aMedida , multi);
 
@@ -104,7 +104,7 @@ const Conversor = {
 
             let multip = Conversor.verificar(multi);
 
-            let numero = (aMedida==='mm'? Medida*multip*100000 : aMedida==='cm'? Medida*multip*10000 : aMedida === 'dm'? Medida : aMedida*multip*1000 === 'm' ? Medida*multip*100 : aMedida === 'dam'? Medida*multip*10 : aMedida === 'hm' ? Medida*multip : aMedida === 'km' ? Medida : `Digite Bien los valores`);
+            let numero = (aMedida==='mm'? Medida*multip*100000 : aMedida==='cm'? Medida*multip*10000 : aMedida === 'dm'? Medida*multip*1000 : aMedida === 'm' ? Medida*multip*100 : aMedida === 'dam'? Medida*multip*10 : aMedida === 'hm' ? Medida*multip : aMedida === 'km' ? Medida : `Digite Bien los valores`);
 
             let resultadoGeneral = Conversor.comp( numero , aMedida , multi);
 
