@@ -68,7 +68,7 @@ console.log(centimetros[0]); //se mostrara 10000 (como número)
 console.log(centimetros[1]); //se mostrara El resultado es : 10000cm (como string)
 ```
 
-El tercer argumento es completamente opcinal y es por si se quieren convertir medidas a una potencia o otras medidas de la misma potencia, por ejemplo si se quieren convertir 100m^2 a cm^2, se haria asi:
+El tercer argumento es completamente opcinal y es por si se quieren convertir medidas a una potencia a otras medidas de la misma potencia, por ejemplo si se quieren convertir 100m^2 a cm^2, se haria asi:
 
 ```js
 conversor.MedidasdeLongitud.metro(100, "cm", 2); //resultado : [ 100000, 'El resultado es : 100000cm^2' ]
