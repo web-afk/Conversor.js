@@ -5,7 +5,7 @@
 para instalar con npm se debe:
 
 ```
-$ npm i conversor-multiple
+npm i conversor-multiple
 ```
 
 ## Inicializar
