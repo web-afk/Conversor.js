@@ -1,6 +1,6 @@
 {
-  "name": "@kefler/conversor-multiple",
-  "version": "1.0.0",
+  "name": "conversor-multiple",
+  "version": "1.0.1",
   "description": "Un simple conversor que devuelve un arreglo con el resultado y una cadena de texto",
   "main": "app.js",
   "scripts": {
