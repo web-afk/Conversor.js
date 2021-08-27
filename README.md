@@ -25,7 +25,7 @@ Con esto usted accede a las conversiones de longitud, esta contiene diferentes m
 ```js
 let conversor = require("conversor-multiple");
 
-conversor.MedidasdeLongitud.mili(argumento1, argumento2, argumentoOpcional); //convierte milimetro a cualquier medida, incluyendo los mismos decimetros
+conversor.MedidasdeLongitud.mili(argumento1, argumento2, argumentoOpcional); //convierte milimetro a cualquier medida, incluyendo los mismos milimetros
 
 conversor.MedidasdeLongitud.centi(argumento1, argumento2, argumentoOpcional); //convierte centimetros a cualquier medida, incluyendo los mismos centimetros
 
